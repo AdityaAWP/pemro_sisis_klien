@@ -20,7 +20,7 @@ window.addEventListener("click", (e) => {
   if (e.target == modalTambah) {
     modalTambah.style.display = "none";
   }
-  if (e.target == modalTambah) {
-    modalTambah.style.display = "none";
+  if (e.target == modalEdit) {
+    modalEdit.style.display = "none";
   }
 });
