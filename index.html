@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="container">
+      <header>
+        <button class="btn-header">Log Out</button>
+      </header>
+      <!-- End Header -->
+
+      <!-- Left Navbar -->
+      <div class="main">
+        <aside>
+          <h1 class="title-navbar">Admin Panel</h1>
+          <nav class="navbar">
+            <ul>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Mahasiswa</a></li>
+              <li><a href="#">Settings</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <!-- End Left Navbar -->
+
+        <!-- Content -->
+        <div class="content">
+          <h2>Daftar User</h2>
+          <button style="padding: 5px 10px" id="tambahMahasiswa">
+            Tambah Mahasiswa
+          </button>
+          <table>
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>A11.2022.14411</td>
+                <td>John</td>
+                <td>B1 Tadika Mesra</td>
+                <td>
+                  <button id="editMahasiswa">Edit</button> |
+                  <button id="deleteMahasiswa">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Content -->
+      </div>
+      <footer>&copy; Admin Panel</footer>
+    </div>
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-create">
+      <div class="modal">
+        <h2>Tambah Mahasiswa</h2>
+        <form>
+          <label for="">Nama : </label>
+          <input type="text" placeholder="Nama" required style="width: 90%" />
+          <div>
+            <button>Batal</button>
+            <button>Simpan</button>
+          </div>
+          <button type="submit">Tambah</button>
+        </form>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Modal Edit -->
+    <div class="modal-overlay" id="modal-edit">
+      <div class="modal">
+        <h2>Edit Mahasiswa</h2>
+        <form>
+          <label for="">Nama : </label>
+          <input type="text" placeholder="Nama" required style="width: 90%" />
+          <div>
+            <button>Batal</button>
+            <button>Simpan</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Modal Edit -->
+    <script src="script.js"></script>
+  </body>
+</html>
